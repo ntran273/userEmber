@@ -1,0 +1,24 @@
+<div class="jumbotron text-center">
+  <h1>Account Info</h1>
+
+  <br/><br/>
+
+  <p>Please enter your Name</p>
+
+  <div class="form-horizontal form-group form-group-lg row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-5 col-md-offset-2">
+      <label for="firstName">First Name</label>
+      {{input type="text" value=firstName class="form-control" placeholder="Please enter your First Name." autofocus="autofocus"}}
+      <label for="lastName">Last Name</label>
+      {{input type="text" value=lastName class="form-control" placeholder="Please enter your Last Name" autofocus="autofocus"}}
+
+    </div>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
+      <button class="btn btn-primary btn-lg btn-block" {{action 'signUp'}}>Enter</button>
+    </div>
+  </div>
+  {{#if responseMessage}}
+   <div class="alert alert-success">{{responseMessage}}</div>
+ {{/if}}
+  <br/><br/>
+</div>

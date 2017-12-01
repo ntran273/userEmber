@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('signup');
+  this.route('ranking');
 });
 
 export default Router;
